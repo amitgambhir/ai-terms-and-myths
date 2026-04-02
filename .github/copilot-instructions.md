@@ -131,6 +131,10 @@ Do not add:
 - **Myths**: Expect 10–15 core myths, with occasional additions. Be selective; each myth should earn its place through frequency and impact.
 - **No interactive tools or code examples** in these documents. This is prose reference material.
 
+### GitHub Pages Site
+
+The project is published as a GitHub Pages site using MkDocs Material. The `docs/` folder contains symlinks to the root-level content files — **never edit the symlinks directly**. Always edit the source files at the repo root (`ai-terms-glossary.md`, `ai-myths-busted.md`, `CONTRIBUTE.md`). The site auto-deploys on push to `main`.
+
 ---
 
 ## Consistency Checks for AI Contributors
