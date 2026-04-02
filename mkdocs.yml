@@ -30,6 +30,9 @@ theme:
 plugins:
   - search
 
+exclude_docs: |
+  superpowers/
+
 nav:
   - Home: index.md
   - Glossary: glossary.md
