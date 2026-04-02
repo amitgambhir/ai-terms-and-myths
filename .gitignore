@@ -16,3 +16,6 @@ Thumbs.db
 .copilot/
 
 #docs
+
+# MkDocs
+site/
