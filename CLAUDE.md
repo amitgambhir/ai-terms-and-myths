@@ -9,7 +9,7 @@ A prose-only reference containing two documents for AI/ML practitioners:
 - **`ai-terms-glossary.md`** — 100+ alphabetized AI/ML term definitions
 - **`ai-myths-busted.md`** — Common AI misconceptions debunked with evidence
 
-No code, no build system, no tests. All contributions are markdown prose.
+Published as a GitHub Pages site via MkDocs Material. Content files at the repo root are the source of truth — `docs/` contains symlinks to them.
 
 **Audience:** Engineers, product managers, and technical leaders building or evaluating AI systems.
 
@@ -98,6 +98,21 @@ Do not proceed if:
 3. Match tone/density of neighboring entries in the same document
 4. Run through the precision checklist in `CONTRIBUTE.md` before submitting
 
+## GitHub Pages Site
+
+The site is built with MkDocs Material and auto-deploys on push to `main` via GitHub Actions.
+
+**Local development:**
+
+```bash
+pip install -r requirements.txt
+mkdocs serve                    # http://127.0.0.1:8000/
+```
+
+**Content strategy:** Files at the repo root (`ai-terms-glossary.md`, `ai-myths-busted.md`, `CONTRIBUTE.md`) are the source of truth. The `docs/` folder contains symlinks to these files — never edit the symlinks directly. `docs/index.md` is the only non-symlink in `docs/` (landing page with different content from README).
+
+**Deploy:** Automatic on push to `main`. The workflow in `.github/workflows/deploy-pages.yml` runs `mkdocs gh-deploy --force` which builds and pushes to the `gh-pages` branch.
+
 ## Key Files
 
 | File | Purpose |
@@ -107,3 +122,7 @@ Do not proceed if:
 | `CONTRIBUTE.md` | Contribution guide with criteria and precision checklist |
 | `.github/copilot-instructions.md` | Detailed workspace instructions (tone, structure, common corrections) |
 | `.github/skills/ai-glossary-and-myths/SKILL.md` | Copilot skill definitions for `/add-glossary-entry` and `/debunk-myth` |
+| `mkdocs.yml` | MkDocs site configuration (nav, theme, plugins) |
+| `docs/` | Site source — symlinks to root content files + `index.md` landing page |
+| `requirements.txt` | Pins mkdocs-material version for CI |
+| `.github/workflows/deploy-pages.yml` | GitHub Actions auto-deploy workflow |
