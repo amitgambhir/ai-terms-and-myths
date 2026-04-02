@@ -1,0 +1,42 @@
+site_name: AI Terms & Myths
+site_description: A practitioner's reference for AI/ML terminology and the misconceptions that won't die.
+site_url: https://amitgambhir.github.io/ai-terms-and-myths/
+repo_url: https://github.com/amitgambhir/ai-terms-and-myths
+repo_name: amitgambhir/ai-terms-and-myths
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Glossary: glossary.md
+  - Myths Busted: myths.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
