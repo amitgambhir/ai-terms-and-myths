@@ -6,6 +6,8 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange)
 
+**[Browse the site](https://amitgambhir.github.io/ai-terms-and-myths/)** — searchable, with dark mode
+
 ---
 
 ## The Problem
@@ -64,6 +66,7 @@ requirements — not the largest one available.
 - **Markdown** — plain text, no build step, readable anywhere, diffs cleanly in PRs
 - **GitHub Issues + Templates** — structured contribution workflow with pre-flight checklists
 - **Community review** — every entry is validated for accuracy, tone, and practical relevance before merge
+- **MkDocs Material** — documentation site with built-in search, dark/light toggle, auto-deployed via GitHub Actions
 
 ---
 
