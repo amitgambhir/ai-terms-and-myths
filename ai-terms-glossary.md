@@ -40,6 +40,9 @@ An algorithm for computing how much each weight in a neural network contributed 
 ### Batch Size
 The number of training examples processed together in a single forward and backward pass before the model's weights are updated. Larger batches produce more stable gradient estimates but require more memory. Batch size interacts with learning rate: doubling the batch size typically calls for a proportional increase in learning rate.
 
+### Bias (AI)
+Systematic patterns in AI outputs that unfairly favor or disadvantage certain groups, perspectives, or outcomes. Bias typically originates in training data — if the data over-represents certain demographics or viewpoints, the model reproduces and sometimes amplifies those skews. Bias can also be introduced through labeling decisions, evaluation metrics, or fine-tuning objectives. Detecting bias requires targeted evaluation across demographic groups, not just aggregate accuracy scores. For practitioners, bias is an engineering and product concern: unaddressed bias leads to discriminatory outputs, regulatory risk, and eroded user trust.
+
 ### BLEU Score
 Bilingual Evaluation Understudy. A metric for evaluating machine-generated text (especially translation) by measuring n-gram overlap with one or more reference outputs. BLEU is fast to compute but only captures surface-level similarity — two responses with the same meaning but different wording may score poorly.
 
@@ -125,6 +128,9 @@ A structured capability that allows language models to request execution of exte
 ---
 
 ## G
+
+### Generative AI
+AI systems that create new content — text, images, code, audio, video — rather than just classifying or analyzing existing data. The term covers a broad family of architectures including autoregressive language models (GPT, Claude), diffusion models (Stable Diffusion, DALL·E), and GANs. Most modern generative AI is built on the transformer architecture. The practical distinction matters: generative models produce outputs that did not exist before, which introduces risks like hallucination and copyright concerns that purely analytical AI does not face.
 
 ### GAN (Generative Adversarial Network)
 An architecture consisting of two competing networks: a generator that creates synthetic data and a discriminator that tries to distinguish real from fake. Adversarial training drives both networks to improve simultaneously. GANs were the dominant generative approach before diffusion models.
@@ -234,8 +240,14 @@ A single learnable value inside a model — typically a weight or bias. "A 7B pa
 ### Perplexity
 A measure of how well a language model predicts a sample of text. It is the exponent of the average cross-entropy loss. Lower perplexity means the model assigns higher probability to the correct tokens — it is less "surprised" by the text. Used as an intrinsic evaluation metric for language models.
 
+### Pre-training
+The initial training phase where a model learns general patterns from massive amounts of data — typically internet-scale text for language models. During pre-training, the model learns syntax, facts, reasoning patterns, and world knowledge by predicting the next token across trillions of examples. This phase is by far the most expensive, often costing millions of dollars in compute. The result is a base model that understands language broadly but does not yet follow instructions or behave helpfully — that comes from subsequent fine-tuning and alignment.
+
 ### Precision & Recall
 Two complementary evaluation metrics. Precision measures the fraction of predicted positives that are actually correct. Recall measures the fraction of actual positives that were correctly identified. They trade off against each other. F1 score is their harmonic mean. Use precision when false positives are costly; prioritize recall when false negatives are costly.
+
+### Prompt
+The complete input given to a language model for a single request. A prompt includes everything the model sees before generating a response: system instructions, conversation history, retrieved documents, user message, and any formatting directives. In API usage, prompts are structured as typed message arrays (system, user, assistant roles). Token count and ordering within the prompt directly affect model behavior, cost, and quality.
 
 ### Prompt Engineering
 The practice of designing input text — including system prompts, instructions, few-shot examples, and output format specifications — to reliably elicit desired model behavior. Effective prompt engineering requires understanding tokenization, attention patterns, context window limits, and model-specific behaviors. It is a systems design discipline, not just conversational skill.
@@ -257,6 +269,9 @@ The process of reducing the numerical precision of model weights — from float3
 
 ## R
 
+### Reasoning Models
+A category of language models specifically designed to perform multi-step reasoning before producing a final answer. These models generate an internal chain of thought — sometimes visible, sometimes hidden — that breaks complex problems into intermediate steps. Examples include OpenAI's o1 and o3 series and Anthropic's Claude with extended thinking. Reasoning models show significant improvements on math, logic, and coding benchmarks compared to standard models of similar size. The tradeoff is higher latency and token cost, since the reasoning trace consumes output tokens even when hidden from the user.
+
 ### RAG (Retrieval-Augmented Generation)
 An architectural pattern for grounding LLM responses in external knowledge. At query time, relevant documents are retrieved from a knowledge base using embedding similarity, injected into the prompt as context, and the model generates its response based on that context. Preferred over fine-tuning when the goal is to incorporate specific, updatable factual knowledge.
 
@@ -272,6 +287,9 @@ Recall-Oriented Understudy for Gisting Evaluation. A set of metrics for evaluati
 ---
 
 ## S
+
+### Scaling Laws
+Empirical observations that model performance improves predictably as compute, dataset size, and parameter count increase. Kaplan et al. (2020) first quantified these power-law relationships for language models. The Chinchilla paper (Hoffmann et al., 2022) refined them, showing that most large models were over-parameterized relative to their training data — training a smaller model on more data yields better performance per compute dollar. Scaling laws guide decisions about model size, training budget, and data collection. They also predict emergent capabilities: abilities that appear suddenly at certain scale thresholds without being explicitly trained.
 
 ### Self-Attention
 The core computation in transformer models. Each token produces query, key, and value vectors. The attention weight between any two tokens is computed as the scaled dot product of their query and key vectors, passed through a softmax. The output for each token is a weighted sum of all value vectors. This allows every token to incorporate information from every other token in a single operation.
