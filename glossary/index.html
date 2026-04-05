@@ -1,0 +1,3173 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A practitioner's reference for AI/ML terminology and the misconceptions that won't die.">
+      
+      
+      
+        <link rel="canonical" href="https://amitgambhir.github.io/ai-terms-and-myths/glossary/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../myths/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Glossary - AI Terms & Myths</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai-machine-learning-glossary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AI Terms &amp; Myths" class="md-header__button md-logo" aria-label="AI Terms & Myths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Terms & Myths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Glossary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/amitgambhir/ai-terms-and-myths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    amitgambhir/ai-terms-and-myths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../myths/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Myths Busted
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../contributing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contributing
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI Terms &amp; Myths" class="md-nav__button md-logo" aria-label="AI Terms & Myths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI Terms & Myths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/amitgambhir/ai-terms-and-myths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    amitgambhir/ai-terms-and-myths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      A
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activation-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activation Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adam-optimizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adam (Optimizer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adamw" class="md-nav__link">
+    <span class="md-ellipsis">
+      AdamW
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autograd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autograd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoregressive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autoregressive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      B
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backpropagation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backpropagation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bias-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bias (AI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bleu-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLEU Score
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chain-of-thought-cot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chain of Thought (CoT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chunking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chunking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnn-convolutional-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      CNN (Convolutional Neural Network)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context Window
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrastive-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contrastive Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosine-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosine Similarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-entropy-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-Entropy Loss
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      CUDA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      D
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-augmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Augmentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diffusion-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diffusion Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dpo-direct-preference-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      DPO (Direct Preference Optimization)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dropout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      E
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="E">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encoder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epoch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epoch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explainability-xai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explainability (XAI)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      F
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#few-shot-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Few-Shot Prompting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fine-Tuning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Calling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    <span class="md-ellipsis">
+      G
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="G">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generative-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generative AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gan-generative-adversarial-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      GAN (Generative Adversarial Network)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-generative-pre-trained-transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPT (Generative Pre-trained Transformer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gradient" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradient
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gradient-descent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradient Descent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guardrails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guardrails
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      H
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="H">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hallucination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hallucination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperparameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperparameter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    <span class="md-ellipsis">
+      I
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inductive-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inductive Bias
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#j" class="md-nav__link">
+    <span class="md-ellipsis">
+      J
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="J">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jax" class="md-nav__link">
+    <span class="md-ellipsis">
+      JAX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    <span class="md-ellipsis">
+      K
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="K">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kv-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      KV Cache
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    <span class="md-ellipsis">
+      L
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="L">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latent-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Latent Space
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llm-large-language-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM (Large Language Model)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lora-low-rank-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRA (Low-Rank Adaptation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loss-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loss Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    <span class="md-ellipsis">
+      M
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mcp-model-context-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCP (Model Context Protocol)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mixed-precision-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mixed Precision Training
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moe-mixture-of-experts" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoE (Mixture of Experts)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      N
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="N">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normalization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    <span class="md-ellipsis">
+      O
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="O">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overfitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overfitting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    <span class="md-ellipsis">
+      P
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="P">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perplexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perplexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-training
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precision &amp; Recall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-injection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Injection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Q">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qlora-quantized-lora" class="md-nav__link">
+    <span class="md-ellipsis">
+      QLoRA (Quantized LoRA)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" class="md-nav__link">
+    <span class="md-ellipsis">
+      R
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="R">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reasoning-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reasoning Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rag-retrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAG (Retrieval-Augmented Generation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relu-rectified-linear-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReLU (Rectified Linear Unit)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rlhf-reinforcement-learning-from-human-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      RLHF (Reinforcement Learning from Human Feedback)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rouge" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROUGE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    <span class="md-ellipsis">
+      S
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scaling-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scaling Laws
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Attention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sft-supervised-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      SFT (Supervised Fine-Tuning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softmax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Streaming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swarm-multi-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swarm (Multi-Agent)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Prompt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t" class="md-nav__link">
+    <span class="md-ellipsis">
+      T
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="T">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temperature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tensor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transfer Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transformer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u" class="md-nav__link">
+    <span class="md-ellipsis">
+      U
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="U">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#underfitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Underfitting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v" class="md-nav__link">
+    <span class="md-ellipsis">
+      V
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="V">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vae-variational-autoencoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      VAE (Variational Autoencoder)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Database
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    <span class="md-ellipsis">
+      W
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="W">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weight
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weight-decay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weight Decay
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#z" class="md-nav__link">
+    <span class="md-ellipsis">
+      Z
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Z">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zero-shot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zero-Shot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../myths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Myths Busted
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      A
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activation-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activation Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adam-optimizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adam (Optimizer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adamw" class="md-nav__link">
+    <span class="md-ellipsis">
+      AdamW
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autograd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autograd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoregressive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autoregressive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      B
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backpropagation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backpropagation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bias-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bias (AI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bleu-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLEU Score
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chain-of-thought-cot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chain of Thought (CoT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chunking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chunking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnn-convolutional-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      CNN (Convolutional Neural Network)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context Window
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrastive-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contrastive Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosine-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosine Similarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-entropy-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-Entropy Loss
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      CUDA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      D
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-augmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Augmentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diffusion-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diffusion Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dpo-direct-preference-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      DPO (Direct Preference Optimization)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dropout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      E
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="E">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encoder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epoch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epoch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explainability-xai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explainability (XAI)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      F
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#few-shot-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Few-Shot Prompting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fine-Tuning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Calling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    <span class="md-ellipsis">
+      G
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="G">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generative-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generative AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gan-generative-adversarial-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      GAN (Generative Adversarial Network)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-generative-pre-trained-transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPT (Generative Pre-trained Transformer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gradient" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradient
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gradient-descent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradient Descent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guardrails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guardrails
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      H
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="H">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hallucination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hallucination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperparameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperparameter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    <span class="md-ellipsis">
+      I
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inductive-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inductive Bias
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#j" class="md-nav__link">
+    <span class="md-ellipsis">
+      J
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="J">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jax" class="md-nav__link">
+    <span class="md-ellipsis">
+      JAX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    <span class="md-ellipsis">
+      K
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="K">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kv-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      KV Cache
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    <span class="md-ellipsis">
+      L
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="L">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latent-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Latent Space
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llm-large-language-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM (Large Language Model)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lora-low-rank-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRA (Low-Rank Adaptation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loss-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loss Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    <span class="md-ellipsis">
+      M
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mcp-model-context-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCP (Model Context Protocol)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mixed-precision-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mixed Precision Training
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moe-mixture-of-experts" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoE (Mixture of Experts)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      N
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="N">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normalization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    <span class="md-ellipsis">
+      O
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="O">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overfitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overfitting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    <span class="md-ellipsis">
+      P
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="P">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perplexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perplexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-training
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precision &amp; Recall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-injection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Injection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Q">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qlora-quantized-lora" class="md-nav__link">
+    <span class="md-ellipsis">
+      QLoRA (Quantized LoRA)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" class="md-nav__link">
+    <span class="md-ellipsis">
+      R
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="R">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reasoning-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reasoning Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rag-retrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAG (Retrieval-Augmented Generation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relu-rectified-linear-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReLU (Rectified Linear Unit)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rlhf-reinforcement-learning-from-human-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      RLHF (Reinforcement Learning from Human Feedback)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rouge" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROUGE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    <span class="md-ellipsis">
+      S
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scaling-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scaling Laws
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Attention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sft-supervised-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      SFT (Supervised Fine-Tuning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softmax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Streaming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swarm-multi-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swarm (Multi-Agent)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Prompt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t" class="md-nav__link">
+    <span class="md-ellipsis">
+      T
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="T">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temperature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tensor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transfer Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transformer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u" class="md-nav__link">
+    <span class="md-ellipsis">
+      U
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="U">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#underfitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Underfitting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v" class="md-nav__link">
+    <span class="md-ellipsis">
+      V
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="V">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vae-variational-autoencoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      VAE (Variational Autoencoder)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Database
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    <span class="md-ellipsis">
+      W
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="W">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weight
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weight-decay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weight Decay
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#z" class="md-nav__link">
+    <span class="md-ellipsis">
+      Z
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Z">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zero-shot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zero-Shot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ai-machine-learning-glossary">AI &amp; Machine Learning Glossary<a class="headerlink" href="#ai-machine-learning-glossary" title="Permanent link">&para;</a></h1>
+<p>A practical reference for engineers, product managers, and technical leaders navigating the AI landscape. Terms are explained with precision — no jargon inflation, no hand-waving.</p>
+<hr />
+<h2 id="a">A<a class="headerlink" href="#a" title="Permanent link">&para;</a></h2>
+<h3 id="activation-function">Activation Function<a class="headerlink" href="#activation-function" title="Permanent link">&para;</a></h3>
+<p>A mathematical function applied after each linear layer in a neural network to introduce non-linearity. Without it, stacking multiple layers would be mathematically equivalent to a single layer. Common examples include ReLU, GELU, and SiLU. The choice of activation function affects how well gradients flow during training.</p>
+<h3 id="adam-optimizer">Adam (Optimizer)<a class="headerlink" href="#adam-optimizer" title="Permanent link">&para;</a></h3>
+<p>Short for Adaptive Moment Estimation. An optimization algorithm that combines momentum-based updates with per-parameter adaptive learning rates. It includes bias correction for early training steps and works well across most tasks with minimal manual tuning.</p>
+<h3 id="adamw">AdamW<a class="headerlink" href="#adamw" title="Permanent link">&para;</a></h3>
+<p>A variant of Adam that decouples weight decay from the gradient update step. In standard Adam, L2 regularization interacts undesirably with the adaptive learning rate. AdamW fixes this by applying weight decay directly to the weights, independent of gradient statistics. It is the standard optimizer for training transformer models.</p>
+<h3 id="agent">Agent<a class="headerlink" href="#agent" title="Permanent link">&para;</a></h3>
+<p>An LLM-powered system that follows a repeated loop: reason about a task, decide which tool to use, execute it, observe the result, and repeat. The "intelligence" comes from the language model; the "autonomy" comes from the loop and the tools wired around it. Agents are not self-aware or goal-driven in any philosophical sense — they are well-engineered reactive systems.</p>
+<h3 id="alignment">Alignment<a class="headerlink" href="#alignment" title="Permanent link">&para;</a></h3>
+<p>The technical challenge of ensuring an AI system's behavior reliably matches human intentions and values — including edge cases, ambiguous situations, and scenarios the designers did not anticipate. Alignment is an active research area and is not considered a solved problem.</p>
+<h3 id="attention">Attention<a class="headerlink" href="#attention" title="Permanent link">&para;</a></h3>
+<p>A mechanism in transformer models that allows each token in a sequence to weigh the relevance of every other token before producing its output. Relevance is computed via dot products between learned query and key vectors. The result is a weighted combination of value vectors. Named by analogy to human selective attention, though the mechanism is purely mathematical.</p>
+<h3 id="autograd">Autograd<a class="headerlink" href="#autograd" title="Permanent link">&para;</a></h3>
+<p>A system built into deep learning frameworks (PyTorch, JAX) that automatically tracks operations on tensors and computes their gradients via reverse-mode differentiation. You write the forward pass; autograd handles all the derivative calculations needed for backpropagation.</p>
+<h3 id="autoregressive">Autoregressive<a class="headerlink" href="#autoregressive" title="Permanent link">&para;</a></h3>
+<p>Describes a model that generates output one token at a time, where each new token is conditioned on all previously generated tokens. The output is fed back as input for the next step. GPT, LLaMA, Mistral, and Claude are all autoregressive models.</p>
+<hr />
+<h2 id="b">B<a class="headerlink" href="#b" title="Permanent link">&para;</a></h2>
+<h3 id="backpropagation">Backpropagation<a class="headerlink" href="#backpropagation" title="Permanent link">&para;</a></h3>
+<p>An algorithm for computing how much each weight in a neural network contributed to the prediction error. It applies the chain rule from calculus backwards through the network — from output to input — and produces gradients used to update weights. It is the engine behind how neural networks learn from data.</p>
+<h3 id="batch-size">Batch Size<a class="headerlink" href="#batch-size" title="Permanent link">&para;</a></h3>
+<p>The number of training examples processed together in a single forward and backward pass before the model's weights are updated. Larger batches produce more stable gradient estimates but require more memory. Batch size interacts with learning rate: doubling the batch size typically calls for a proportional increase in learning rate.</p>
+<h3 id="bias-ai">Bias (AI)<a class="headerlink" href="#bias-ai" title="Permanent link">&para;</a></h3>
+<p>Systematic patterns in AI outputs that unfairly favor or disadvantage certain groups, perspectives, or outcomes. Bias typically originates in training data — if the data over-represents certain demographics or viewpoints, the model reproduces and sometimes amplifies those skews. Bias can also be introduced through labeling decisions, evaluation metrics, or fine-tuning objectives. Detecting bias requires targeted evaluation across demographic groups, not just aggregate accuracy scores. For practitioners, bias is an engineering and product concern: unaddressed bias leads to discriminatory outputs, regulatory risk, and eroded user trust.</p>
+<h3 id="bleu-score">BLEU Score<a class="headerlink" href="#bleu-score" title="Permanent link">&para;</a></h3>
+<p>Bilingual Evaluation Understudy. A metric for evaluating machine-generated text (especially translation) by measuring n-gram overlap with one or more reference outputs. BLEU is fast to compute but only captures surface-level similarity — two responses with the same meaning but different wording may score poorly.</p>
+<hr />
+<h2 id="c">C<a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
+<h3 id="chain-of-thought-cot">Chain of Thought (CoT)<a class="headerlink" href="#chain-of-thought-cot" title="Permanent link">&para;</a></h3>
+<p>A prompting technique where the model is asked to reason through a problem step by step before producing a final answer. Because each step conditions the next token, explicit reasoning often improves accuracy on multi-step or logical tasks. Can be elicited with simple instructions like "think step by step."</p>
+<h3 id="chunking">Chunking<a class="headerlink" href="#chunking" title="Permanent link">&para;</a></h3>
+<p>The process of splitting documents into smaller segments before embedding them for retrieval. Chunk size controls the granularity of search results: too small loses contextual meaning; too large dilutes relevance. Common strategies include fixed-size with overlap, sentence-based, and semantic splitting. Typical sizes range from 256 to 512 tokens with 10–20% overlap.</p>
+<h3 id="cnn-convolutional-neural-network">CNN (Convolutional Neural Network)<a class="headerlink" href="#cnn-convolutional-neural-network" title="Permanent link">&para;</a></h3>
+<p>A neural network architecture designed for grid-structured data like images. It applies sliding filters (convolutions) across the input to detect local patterns — edges at lower layers, textures and shapes at higher layers. CNNs remain widely used in production vision systems despite the rise of Vision Transformers, particularly on mobile and edge devices where inference speed matters.</p>
+<h3 id="context-window">Context Window<a class="headerlink" href="#context-window" title="Permanent link">&para;</a></h3>
+<p>The maximum number of tokens — input plus output — that a model can process in a single API call. It is not persistent memory. When the conversation exceeds this limit, older content is dropped. A larger context window does not guarantee equal attention across all positions.</p>
+<h3 id="contrastive-learning">Contrastive Learning<a class="headerlink" href="#contrastive-learning" title="Permanent link">&para;</a></h3>
+<p>A training approach that teaches a model by pulling representations of similar items closer together in vector space while pushing dissimilar items apart. CLIP uses this to align image and text embeddings by contrasting matched image-text pairs against unmatched ones.</p>
+<h3 id="cosine-similarity">Cosine Similarity<a class="headerlink" href="#cosine-similarity" title="Permanent link">&para;</a></h3>
+<p>A measure of directional similarity between two vectors, calculated as the cosine of the angle between them. Ranges from -1 (opposite directions) to 1 (identical directions). Ignores vector magnitude, making it suitable for comparing embeddings regardless of length. The standard similarity metric for semantic search and retrieval.</p>
+<h3 id="cross-entropy-loss">Cross-Entropy Loss<a class="headerlink" href="#cross-entropy-loss" title="Permanent link">&para;</a></h3>
+<p>A loss function that measures the difference between a predicted probability distribution and the true distribution. For classification, it penalizes confident wrong predictions heavily. For language models, it is the negative log probability of the correct next token. Perplexity is simply the exponent of cross-entropy loss.</p>
+<h3 id="cuda">CUDA<a class="headerlink" href="#cuda" title="Permanent link">&para;</a></h3>
+<p>NVIDIA's parallel computing platform that enables code to run across thousands of GPU cores simultaneously. PyTorch and TensorFlow use CUDA under the hood for matrix operations. Writing CUDA-native code is rarely needed in practice, but understanding its role helps in debugging GPU memory and performance issues.</p>
+<hr />
+<h2 id="d">D<a class="headerlink" href="#d" title="Permanent link">&para;</a></h2>
+<h3 id="data-augmentation">Data Augmentation<a class="headerlink" href="#data-augmentation" title="Permanent link">&para;</a></h3>
+<p>The practice of generating modified versions of existing training examples — rotated images, paraphrased sentences, added noise — to increase dataset diversity without collecting new data. Reduces overfitting and improves generalization.</p>
+<h3 id="decoder">Decoder<a class="headerlink" href="#decoder" title="Permanent link">&para;</a></h3>
+<p>In transformer architecture, a module that uses masked (causal) self-attention, meaning each position can only attend to earlier positions. This makes decoders well-suited for text generation. GPT models are decoder-only. BERT is encoder-only. T5 uses both an encoder and a decoder.</p>
+<h3 id="diffusion-model">Diffusion Model<a class="headerlink" href="#diffusion-model" title="Permanent link">&para;</a></h3>
+<p>A generative model trained to reverse a gradual noising process. During training, the model learns to predict and remove small amounts of noise added to data. At inference time, it starts from pure noise and iteratively denoises until a coherent output emerges. The basis for image generation systems like Stable Diffusion and DALL·E.</p>
+<h3 id="dpo-direct-preference-optimization">DPO (Direct Preference Optimization)<a class="headerlink" href="#dpo-direct-preference-optimization" title="Permanent link">&para;</a></h3>
+<p>A training technique that aligns a language model to human preferences without requiring a separately trained reward model. Instead of using reinforcement learning, DPO directly optimizes the model's weights to favor preferred responses over less preferred ones using paired human feedback data.</p>
+<h3 id="dropout">Dropout<a class="headerlink" href="#dropout" title="Permanent link">&para;</a></h3>
+<p>A regularization technique that randomly sets a fraction of activations to zero during training, preventing the network from over-relying on any single neuron. Dropout is turned off during inference. Simple, widely used, and effective across model types.</p>
+<hr />
+<h2 id="e">E<a class="headerlink" href="#e" title="Permanent link">&para;</a></h2>
+<h3 id="embedding">Embedding<a class="headerlink" href="#embedding" title="Permanent link">&para;</a></h3>
+<p>A learned mapping that converts discrete items — words, documents, images, users — into dense numerical vectors in a continuous space. Items that are semantically similar end up geometrically close in this space. Embeddings are foundational to semantic search, recommendation systems, and retrieval-augmented generation.</p>
+<h3 id="encoder">Encoder<a class="headerlink" href="#encoder" title="Permanent link">&para;</a></h3>
+<p>In transformer architecture, a module that uses bidirectional self-attention, allowing each token to attend to all other tokens in both directions. Well-suited for understanding and classification tasks. BERT is encoder-only. Unlike decoders, encoders do not generate text — they produce rich representations of input.</p>
+<h3 id="epoch">Epoch<a class="headerlink" href="#epoch" title="Permanent link">&para;</a></h3>
+<p>One complete pass through the entire training dataset. Training typically runs for multiple epochs. More epochs can improve model performance but increase the risk of overfitting if not managed with regularization or early stopping.</p>
+<h3 id="explainability-xai">Explainability (XAI)<a class="headerlink" href="#explainability-xai" title="Permanent link">&para;</a></h3>
+<p>The field of methods and tools that make model decisions interpretable to humans. Techniques include attention visualization, saliency maps, SHAP values, and probing classifiers. Explainability is distinct from interpretability: explainability provides post-hoc reasoning; interpretability refers to models that are transparent by design (e.g., decision trees).</p>
+<hr />
+<h2 id="f">F<a class="headerlink" href="#f" title="Permanent link">&para;</a></h2>
+<h3 id="feature">Feature<a class="headerlink" href="#feature" title="Permanent link">&para;</a></h3>
+<p>An individual measurable property used as input to a model. In classical machine learning, features are hand-engineered by domain experts. In deep learning, the network learns feature representations automatically from raw data.</p>
+<h3 id="few-shot-prompting">Few-Shot Prompting<a class="headerlink" href="#few-shot-prompting" title="Permanent link">&para;</a></h3>
+<p>Providing a small number of input-output examples in the prompt before the actual task, allowing the model to infer the desired pattern or format. Typically 2–5 examples. Distinct from fine-tuning, which bakes behavior into model weights through additional training.</p>
+<h3 id="fine-tuning">Fine-Tuning<a class="headerlink" href="#fine-tuning" title="Permanent link">&para;</a></h3>
+<p>Continuing the training of a pre-trained model on a smaller, task-specific dataset. Fine-tuning adjusts the model's existing weights to better suit a particular use case. It does not add new factual knowledge — it changes behavior, style, and format.</p>
+<h3 id="function-calling">Function Calling<a class="headerlink" href="#function-calling" title="Permanent link">&para;</a></h3>
+<p>A structured capability that allows language models to request execution of external functions. You define available tools with typed schemas; the model outputs a structured object specifying which function to call and with what arguments; your application executes it and returns the result. The mechanism that powers tool-using agents.</p>
+<hr />
+<h2 id="g">G<a class="headerlink" href="#g" title="Permanent link">&para;</a></h2>
+<h3 id="generative-ai">Generative AI<a class="headerlink" href="#generative-ai" title="Permanent link">&para;</a></h3>
+<p>AI systems that create new content — text, images, code, audio, video — rather than just classifying or analyzing existing data. The term covers a broad family of architectures including autoregressive language models (GPT, Claude), diffusion models (Stable Diffusion, DALL·E), and GANs. Most modern generative AI is built on the transformer architecture. The practical distinction matters: generative models produce outputs that did not exist before, which introduces risks like hallucination and copyright concerns that purely analytical AI does not face.</p>
+<h3 id="gan-generative-adversarial-network">GAN (Generative Adversarial Network)<a class="headerlink" href="#gan-generative-adversarial-network" title="Permanent link">&para;</a></h3>
+<p>An architecture consisting of two competing networks: a generator that creates synthetic data and a discriminator that tries to distinguish real from fake. Adversarial training drives both networks to improve simultaneously. GANs were the dominant generative approach before diffusion models.</p>
+<h3 id="gpt-generative-pre-trained-transformer">GPT (Generative Pre-trained Transformer)<a class="headerlink" href="#gpt-generative-pre-trained-transformer" title="Permanent link">&para;</a></h3>
+<p>A decoder-only transformer architecture trained on large text corpora using next-token prediction. Generative refers to its ability to produce text; Pre-trained means it was trained once on a massive dataset before task-specific adaptation; Transformer is the underlying architecture. GPT-style models are the basis for most modern chat AI systems.</p>
+<h3 id="gradient">Gradient<a class="headerlink" href="#gradient" title="Permanent link">&para;</a></h3>
+<p>A vector of partial derivatives that indicates the direction and rate of steepest increase of a function with respect to its inputs. In machine learning, gradients are computed with respect to the loss function. Training moves parameters in the opposite direction of the gradient — hence gradient descent.</p>
+<h3 id="gradient-descent">Gradient Descent<a class="headerlink" href="#gradient-descent" title="Permanent link">&para;</a></h3>
+<p>An optimization algorithm that updates model parameters iteratively in the direction that reduces the loss function most steeply. Conceptually similar to descending a mountain by always stepping in the downhill direction. Variants include stochastic gradient descent (SGD), mini-batch gradient descent, and adaptive methods like Adam.</p>
+<h3 id="guardrails">Guardrails<a class="headerlink" href="#guardrails" title="Permanent link">&para;</a></h3>
+<p>Input and output validation layers that wrap a language model to detect and block harmful, off-topic, or policy-violating content. Can be rule-based (keyword filters, regex) or model-based (classifiers scoring safety). A production AI system typically includes input filtering, the core model, and output filtering as separate, composable layers.</p>
+<hr />
+<h2 id="h">H<a class="headerlink" href="#h" title="Permanent link">&para;</a></h2>
+<h3 id="hallucination">Hallucination<a class="headerlink" href="#hallucination" title="Permanent link">&para;</a></h3>
+<p>When a model generates plausible-sounding text that is factually incorrect or not grounded in its context or training data. Hallucinations occur because language models are trained to produce statistically likely text, not to verify factual accuracy. They are a fundamental characteristic of autoregressive generation, not a bug to be fully patched.</p>
+<h3 id="hyperparameter">Hyperparameter<a class="headerlink" href="#hyperparameter" title="Permanent link">&para;</a></h3>
+<p>A configuration value set before training that governs the training process itself — learning rate, batch size, number of layers, dropout rate. Unlike model parameters (weights), hyperparameters are not learned from data; they are chosen by the practitioner.</p>
+<hr />
+<h2 id="i">I<a class="headerlink" href="#i" title="Permanent link">&para;</a></h2>
+<h3 id="inference">Inference<a class="headerlink" href="#inference" title="Permanent link">&para;</a></h3>
+<p>Using a trained model to generate predictions or outputs on new data. No weight updates occur during inference. Inference is what runs in production. Optimizing inference — through quantization, batching, caching, and hardware selection — is a major engineering discipline in AI deployment.</p>
+<h3 id="inductive-bias">Inductive Bias<a class="headerlink" href="#inductive-bias" title="Permanent link">&para;</a></h3>
+<p>The set of assumptions baked into a model's architecture that shape what it can learn efficiently. CNNs assume local spatial patterns matter. RNNs assume sequential order is important. Transformers assume any position might be relevant to any other. Choosing an architecture with the right inductive bias for your data improves sample efficiency.</p>
+<hr />
+<h2 id="j">J<a class="headerlink" href="#j" title="Permanent link">&para;</a></h2>
+<h3 id="jax">JAX<a class="headerlink" href="#jax" title="Permanent link">&para;</a></h3>
+<p>A numerical computing library from Google that adds automatic differentiation, JIT compilation, and multi-device parallelism to NumPy-style code. Unlike PyTorch's object-oriented approach, JAX is purely functional — no hidden state, no in-place mutation. Used by Google DeepMind for large-scale research including AlphaFold and Gemini.</p>
+<hr />
+<h2 id="k">K<a class="headerlink" href="#k" title="Permanent link">&para;</a></h2>
+<h3 id="kv-cache">KV Cache<a class="headerlink" href="#kv-cache" title="Permanent link">&para;</a></h3>
+<p>A performance optimization for autoregressive inference. During text generation, the model caches the key and value matrices computed for each previous token, avoiding redundant recomputation at every step. Trades memory for inference speed. Essential for low-latency production LLM systems.</p>
+<hr />
+<h2 id="l">L<a class="headerlink" href="#l" title="Permanent link">&para;</a></h2>
+<h3 id="latent-space">Latent Space<a class="headerlink" href="#latent-space" title="Permanent link">&para;</a></h3>
+<p>A compressed, learned representation space where similar inputs are mapped to nearby points. Autoencoders, VAEs, and diffusion models all operate in latent space. It is lower-dimensional than the raw input but captures the essential structure of the data in a form the model can manipulate.</p>
+<h3 id="learning-rate">Learning Rate<a class="headerlink" href="#learning-rate" title="Permanent link">&para;</a></h3>
+<p>A scalar that controls the step size taken during each gradient descent update. Too high and training overshoots and diverges. Too low and training is slow or gets stuck. The learning rate is generally considered the most important hyperparameter to tune. Learning rate schedules (warmup, cosine decay) are standard practice in transformer training.</p>
+<h3 id="llm-large-language-model">LLM (Large Language Model)<a class="headerlink" href="#llm-large-language-model" title="Permanent link">&para;</a></h3>
+<p>A transformer-based neural network with billions of parameters, trained on internet-scale text data to predict the next token in a sequence. The scale of data and compute produces emergent capabilities — instruction following, reasoning, code generation — that were not explicitly programmed. Not all LLMs are equal: architecture, data quality, and training methodology matter as much as raw size.</p>
+<h3 id="lora-low-rank-adaptation">LoRA (Low-Rank Adaptation)<a class="headerlink" href="#lora-low-rank-adaptation" title="Permanent link">&para;</a></h3>
+<p>A parameter-efficient fine-tuning technique that adds small, trainable low-rank matrices alongside the frozen weights of a pre-trained model. Only these small matrices are updated during fine-tuning, reducing memory and compute requirements by 10–100x compared to full fine-tuning with minimal performance loss.</p>
+<h3 id="loss-function">Loss Function<a class="headerlink" href="#loss-function" title="Permanent link">&para;</a></h3>
+<p>A function that quantifies the gap between a model's predictions and the correct output. Training minimizes this function. Common examples: mean squared error for regression, cross-entropy for classification, contrastive loss for embeddings. The loss function operationally defines what "correct" means for the model.</p>
+<hr />
+<h2 id="m">M<a class="headerlink" href="#m" title="Permanent link">&para;</a></h2>
+<h3 id="mcp-model-context-protocol">MCP (Model Context Protocol)<a class="headerlink" href="#mcp-model-context-protocol" title="Permanent link">&para;</a></h3>
+<p>An open protocol that standardizes how AI applications connect to external data sources, tools, and services using typed JSON-RPC schemas. MCP enables modular, interoperable AI systems where models can invoke tools across different providers without custom integration for each one.</p>
+<h3 id="mixed-precision-training">Mixed Precision Training<a class="headerlink" href="#mixed-precision-training" title="Permanent link">&para;</a></h3>
+<p>A training strategy that uses 16-bit floating point (float16 or bfloat16) for most computations — which is faster and more memory-efficient — while keeping 32-bit precision for gradient accumulation and weight updates where numerical stability matters. Delivers approximately 2x speedup with negligible accuracy impact.</p>
+<h3 id="moe-mixture-of-experts">MoE (Mixture of Experts)<a class="headerlink" href="#moe-mixture-of-experts" title="Permanent link">&para;</a></h3>
+<p>An architecture where the model contains many specialized "expert" subnetworks. A learned routing mechanism selects a small subset of experts for each input, so the model's total parameter count is large but each forward pass is computationally cheap. Used in Mixtral and reportedly in GPT-4.</p>
+<hr />
+<h2 id="n">N<a class="headerlink" href="#n" title="Permanent link">&para;</a></h2>
+<h3 id="normalization">Normalization<a class="headerlink" href="#normalization" title="Permanent link">&para;</a></h3>
+<p>The process of adjusting activation values to a standard range or distribution to stabilize training and enable higher learning rates. Batch normalization normalizes across examples in a batch. Layer normalization normalizes across the feature dimension within each example. Layer norm is standard in transformer architectures.</p>
+<hr />
+<h2 id="o">O<a class="headerlink" href="#o" title="Permanent link">&para;</a></h2>
+<h3 id="optimizer">Optimizer<a class="headerlink" href="#optimizer" title="Permanent link">&para;</a></h3>
+<p>An algorithm that uses computed gradients to update model parameters. SGD is the simplest. Adam and AdamW are the most common in practice. Optimizers differ in convergence speed, memory requirements, and sensitivity to hyperparameter choices.</p>
+<h3 id="overfitting">Overfitting<a class="headerlink" href="#overfitting" title="Permanent link">&para;</a></h3>
+<p>When a model learns the training data so precisely that it performs poorly on new, unseen data. The model memorized noise rather than generalizing the underlying patterns. Common remedies: more training data, regularization techniques (dropout, weight decay), early stopping, and data augmentation.</p>
+<hr />
+<h2 id="p">P<a class="headerlink" href="#p" title="Permanent link">&para;</a></h2>
+<h3 id="parameter">Parameter<a class="headerlink" href="#parameter" title="Permanent link">&para;</a></h3>
+<p>A single learnable value inside a model — typically a weight or bias. "A 7B parameter model" contains 7 billion such values. In float32 precision, each parameter takes 4 bytes of memory, so a 7B model requires roughly 28GB just to store the weights. Parameter count is a rough proxy for model capacity, not intelligence.</p>
+<h3 id="perplexity">Perplexity<a class="headerlink" href="#perplexity" title="Permanent link">&para;</a></h3>
+<p>A measure of how well a language model predicts a sample of text. It is the exponent of the average cross-entropy loss. Lower perplexity means the model assigns higher probability to the correct tokens — it is less "surprised" by the text. Used as an intrinsic evaluation metric for language models.</p>
+<h3 id="pre-training">Pre-training<a class="headerlink" href="#pre-training" title="Permanent link">&para;</a></h3>
+<p>The initial training phase where a model learns general patterns from massive amounts of data — typically internet-scale text for language models. During pre-training, the model learns syntax, facts, reasoning patterns, and world knowledge by predicting the next token across trillions of examples. This phase is by far the most expensive, often costing millions of dollars in compute. The result is a base model that understands language broadly but does not yet follow instructions or behave helpfully — that comes from subsequent fine-tuning and alignment.</p>
+<h3 id="precision-recall">Precision &amp; Recall<a class="headerlink" href="#precision-recall" title="Permanent link">&para;</a></h3>
+<p>Two complementary evaluation metrics. Precision measures the fraction of predicted positives that are actually correct. Recall measures the fraction of actual positives that were correctly identified. They trade off against each other. F1 score is their harmonic mean. Use precision when false positives are costly; prioritize recall when false negatives are costly.</p>
+<h3 id="prompt">Prompt<a class="headerlink" href="#prompt" title="Permanent link">&para;</a></h3>
+<p>The complete input given to a language model for a single request. A prompt includes everything the model sees before generating a response: system instructions, conversation history, retrieved documents, user message, and any formatting directives. In API usage, prompts are structured as typed message arrays (system, user, assistant roles). Token count and ordering within the prompt directly affect model behavior, cost, and quality.</p>
+<h3 id="prompt-engineering">Prompt Engineering<a class="headerlink" href="#prompt-engineering" title="Permanent link">&para;</a></h3>
+<p>The practice of designing input text — including system prompts, instructions, few-shot examples, and output format specifications — to reliably elicit desired model behavior. Effective prompt engineering requires understanding tokenization, attention patterns, context window limits, and model-specific behaviors. It is a systems design discipline, not just conversational skill.</p>
+<h3 id="prompt-injection">Prompt Injection<a class="headerlink" href="#prompt-injection" title="Permanent link">&para;</a></h3>
+<p>An attack in which malicious text in the model's input overrides its instructions or system prompt. Direct injection occurs when a user explicitly attempts to override instructions. Indirect injection occurs when a retrieved document or tool output contains hidden instructions. No complete defense exists; mitigation relies on layered input validation, output filtering, and privilege separation.</p>
+<hr />
+<h2 id="q">Q<a class="headerlink" href="#q" title="Permanent link">&para;</a></h2>
+<h3 id="qlora-quantized-lora">QLoRA (Quantized LoRA)<a class="headerlink" href="#qlora-quantized-lora" title="Permanent link">&para;</a></h3>
+<p>A memory-efficient fine-tuning technique that combines 4-bit quantization of the frozen base model with LoRA adapters trained in 16-bit precision. Reduces memory requirements by 3–4x compared to standard LoRA. A 7B model that requires 14GB with LoRA can fit in 4–6GB with QLoRA, with quality within ~1% of full fine-tuning on most benchmarks.</p>
+<h3 id="quantization">Quantization<a class="headerlink" href="#quantization" title="Permanent link">&para;</a></h3>
+<p>The process of reducing the numerical precision of model weights — from float32 (4 bytes) to int8 (1 byte) or int4 (0.5 bytes). Reduces memory footprint by 4–8x and speeds up inference, at a small cost to accuracy. Common formats include GPTQ, AWQ, and GGUF.</p>
+<hr />
+<h2 id="r">R<a class="headerlink" href="#r" title="Permanent link">&para;</a></h2>
+<h3 id="reasoning-models">Reasoning Models<a class="headerlink" href="#reasoning-models" title="Permanent link">&para;</a></h3>
+<p>A category of language models specifically designed to perform multi-step reasoning before producing a final answer. These models generate an internal chain of thought — sometimes visible, sometimes hidden — that breaks complex problems into intermediate steps. Examples include OpenAI's o1 and o3 series and Anthropic's Claude with extended thinking. Reasoning models show significant improvements on math, logic, and coding benchmarks compared to standard models of similar size. The tradeoff is higher latency and token cost, since the reasoning trace consumes output tokens even when hidden from the user.</p>
+<h3 id="rag-retrieval-augmented-generation">RAG (Retrieval-Augmented Generation)<a class="headerlink" href="#rag-retrieval-augmented-generation" title="Permanent link">&para;</a></h3>
+<p>An architectural pattern for grounding LLM responses in external knowledge. At query time, relevant documents are retrieved from a knowledge base using embedding similarity, injected into the prompt as context, and the model generates its response based on that context. Preferred over fine-tuning when the goal is to incorporate specific, updatable factual knowledge.</p>
+<h3 id="relu-rectified-linear-unit">ReLU (Rectified Linear Unit)<a class="headerlink" href="#relu-rectified-linear-unit" title="Permanent link">&para;</a></h3>
+<p>The simplest widely used activation function: f(x) = max(0, x). Fast to compute, does not saturate for positive values, and works across most architectures. Common variants include LeakyReLU (allows small negative values), GELU (smoother approximation), and SiLU.</p>
+<h3 id="rlhf-reinforcement-learning-from-human-feedback">RLHF (Reinforcement Learning from Human Feedback)<a class="headerlink" href="#rlhf-reinforcement-learning-from-human-feedback" title="Permanent link">&para;</a></h3>
+<p>A training pipeline used to align language models with human preferences. It involves three steps: collecting human preference judgments on model outputs, training a reward model on those preferences, and using reinforcement learning (typically PPO) to optimize the language model to produce higher-reward responses. The technique behind instruction-following and helpfulness in most production chat models.</p>
+<h3 id="rouge">ROUGE<a class="headerlink" href="#rouge" title="Permanent link">&para;</a></h3>
+<p>Recall-Oriented Understudy for Gisting Evaluation. A set of metrics for evaluating generated summaries by measuring overlap with reference text. ROUGE-1 counts unigram matches, ROUGE-2 counts bigrams, ROUGE-L finds the longest common subsequence. Fast and widely used, but only captures surface-level similarity.</p>
+<hr />
+<h2 id="s">S<a class="headerlink" href="#s" title="Permanent link">&para;</a></h2>
+<h3 id="scaling-laws">Scaling Laws<a class="headerlink" href="#scaling-laws" title="Permanent link">&para;</a></h3>
+<p>Empirical observations that model performance improves predictably as compute, dataset size, and parameter count increase. Kaplan et al. (2020) first quantified these power-law relationships for language models. The Chinchilla paper (Hoffmann et al., 2022) refined them, showing that most large models were over-parameterized relative to their training data — training a smaller model on more data yields better performance per compute dollar. Scaling laws guide decisions about model size, training budget, and data collection. They also predict emergent capabilities: abilities that appear suddenly at certain scale thresholds without being explicitly trained.</p>
+<h3 id="self-attention">Self-Attention<a class="headerlink" href="#self-attention" title="Permanent link">&para;</a></h3>
+<p>The core computation in transformer models. Each token produces query, key, and value vectors. The attention weight between any two tokens is computed as the scaled dot product of their query and key vectors, passed through a softmax. The output for each token is a weighted sum of all value vectors. This allows every token to incorporate information from every other token in a single operation.</p>
+<h3 id="semantic-search">Semantic Search<a class="headerlink" href="#semantic-search" title="Permanent link">&para;</a></h3>
+<p>Retrieval based on meaning rather than keyword matching. A query and all candidate documents are embedded into the same vector space, and documents closest to the query embedding are returned. "payment failed" can retrieve "transaction declined" even with no shared words. Powered by embedding models and vector databases.</p>
+<h3 id="sft-supervised-fine-tuning">SFT (Supervised Fine-Tuning)<a class="headerlink" href="#sft-supervised-fine-tuning" title="Permanent link">&para;</a></h3>
+<p>Fine-tuning a pre-trained base model on curated (instruction, response) pairs to teach it to follow instructions and produce helpful, formatted outputs. SFT is typically the first step in transforming a base model into a chat model, before alignment techniques like RLHF or DPO.</p>
+<h3 id="softmax">Softmax<a class="headerlink" href="#softmax" title="Permanent link">&para;</a></h3>
+<p>A function that converts a vector of arbitrary real numbers into a valid probability distribution — all values are positive and sum to 1. Used in classification output layers, attention weight computation, and anywhere a probability over discrete choices is needed. Temperature scaling is applied to logits before softmax to control output randomness.</p>
+<h3 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h3>
+<p>Sending model output tokens to the client as they are generated, rather than waiting for the full response to complete. Uses Server-Sent Events (SSE) or WebSocket protocols. Dramatically reduces perceived latency — the user sees the first token in milliseconds rather than waiting seconds. Standard in production chat interfaces.</p>
+<h3 id="swarm-multi-agent">Swarm (Multi-Agent)<a class="headerlink" href="#swarm-multi-agent" title="Permanent link">&para;</a></h3>
+<p>A system of multiple AI agents that coordinate through shared state and message passing. Emergent behavior arises from simple individual rules rather than centralized control. Useful for parallelizing complex tasks across specialized agents, though coordination overhead and error propagation are real engineering challenges.</p>
+<h3 id="system-prompt">System Prompt<a class="headerlink" href="#system-prompt" title="Permanent link">&para;</a></h3>
+<p>A privileged instruction block processed at the start of a conversation, set by the application developer rather than the end user. Defines the model's persona, behavior constraints, output format preferences, and domain boundaries. Typically not visible to the user in production interfaces. Effectively the API contract between the developer and the model.</p>
+<hr />
+<h2 id="t">T<a class="headerlink" href="#t" title="Permanent link">&para;</a></h2>
+<h3 id="temperature">Temperature<a class="headerlink" href="#temperature" title="Permanent link">&para;</a></h3>
+<p>A scalar applied to model logits before the softmax step, controlling the randomness of token selection. Higher temperature flattens the probability distribution, making less likely tokens more probable — increasing output variability. Lower temperature sharpens the distribution, making outputs more deterministic. Temperature = 0 is equivalent to always selecting the highest-probability token.</p>
+<h3 id="tensor">Tensor<a class="headerlink" href="#tensor" title="Permanent link">&para;</a></h3>
+<p>The fundamental data structure in deep learning frameworks. A generalization of scalars, vectors, and matrices to arbitrary dimensions. All model inputs, outputs, weights, and gradients are tensors. Frameworks like PyTorch and JAX track tensor operations automatically for gradient computation and can execute them on GPU or specialized hardware.</p>
+<h3 id="token">Token<a class="headerlink" href="#token" title="Permanent link">&para;</a></h3>
+<p>The basic unit of text that language models process. Produced by a tokenizer (commonly Byte Pair Encoding), tokens typically correspond to subword units — roughly 3–4 characters in English. One word may be one token or several. Understanding tokenization matters for prompt design, cost estimation, and debugging unexpected model behavior.</p>
+<h3 id="transfer-learning">Transfer Learning<a class="headerlink" href="#transfer-learning" title="Permanent link">&para;</a></h3>
+<p>Adapting a model pre-trained on one large task to a different, typically smaller task. Early layers in deep networks learn general representations (edges, syntax, semantics) that transfer across tasks. Later layers are task-specific and require adaptation. Transfer learning is why you can fine-tune a general-purpose model for a specialized domain with relatively little data.</p>
+<h3 id="transformer">Transformer<a class="headerlink" href="#transformer" title="Permanent link">&para;</a></h3>
+<p>The dominant neural network architecture in modern AI. Processes input sequences using self-attention, allowing every position to relate to every other position simultaneously. Unlike recurrent models, transformers parallelize over the full sequence, enabling training on massive datasets at scale. Introduced in the 2017 paper "Attention Is All You Need."</p>
+<hr />
+<h2 id="u">U<a class="headerlink" href="#u" title="Permanent link">&para;</a></h2>
+<h3 id="underfitting">Underfitting<a class="headerlink" href="#underfitting" title="Permanent link">&para;</a></h3>
+<p>When a model is too simple to capture the patterns in the training data. Training loss remains high. Remedies include increasing model capacity (more layers or parameters), training longer, or reducing regularization.</p>
+<hr />
+<h2 id="v">V<a class="headerlink" href="#v" title="Permanent link">&para;</a></h2>
+<h3 id="vae-variational-autoencoder">VAE (Variational Autoencoder)<a class="headerlink" href="#vae-variational-autoencoder" title="Permanent link">&para;</a></h3>
+<p>A generative model that learns a structured latent space by training the encoder to produce a probability distribution (typically Gaussian) rather than a fixed vector. Sampling from this distribution and decoding produces new data. The reparameterization trick makes the sampling step differentiable, enabling end-to-end training via backpropagation.</p>
+<h3 id="vector-database">Vector Database<a class="headerlink" href="#vector-database" title="Permanent link">&para;</a></h3>
+<p>A database optimized for storing high-dimensional dense vectors and performing fast approximate nearest-neighbor (ANN) search. The core infrastructure component for semantic search, RAG pipelines, and recommendation systems. Examples include Pinecone, Weaviate, Qdrant, and pgvector.</p>
+<hr />
+<h2 id="w">W<a class="headerlink" href="#w" title="Permanent link">&para;</a></h2>
+<h3 id="weight">Weight<a class="headerlink" href="#weight" title="Permanent link">&para;</a></h3>
+<p>A single learnable parameter in a model — one number in a parameter matrix. Training adjusts weights to minimize the loss function. The full set of weights encodes everything the model has learned from training data.</p>
+<h3 id="weight-decay">Weight Decay<a class="headerlink" href="#weight-decay" title="Permanent link">&para;</a></h3>
+<p>A regularization technique that adds a penalty proportional to the magnitude of model weights to the loss function. Equivalent to L2 regularization. Prevents weights from growing excessively large, which can lead to overfitting. Typical values range from 0.01 to 0.1.</p>
+<hr />
+<h2 id="z">Z<a class="headerlink" href="#z" title="Permanent link">&para;</a></h2>
+<h3 id="zero-shot">Zero-Shot<a class="headerlink" href="#zero-shot" title="Permanent link">&para;</a></h3>
+<p>Using a model on a task without providing any task-specific examples in the prompt. The model generalizes from patterns learned during pre-training. Effective for large models that have seen enough variety of tasks. Contrasts with few-shot (examples in the prompt) and fine-tuning (examples baked into weights).</p>
+<hr />
+<p><em>Last updated: April 2026 | Contributions welcome</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../myths/" class="md-footer__link md-footer__link--next" aria-label="Next: Myths Busted">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Myths Busted
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "navigation.tracking", "content.code.copy", "content.tooltips", "search.highlight", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
