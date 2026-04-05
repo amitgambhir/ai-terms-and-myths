@@ -6,26 +6,40 @@ repo_name: amitgambhir/ai-terms-and-myths
 
 theme:
   name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: white
+      accent: white
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: grey
+      accent: grey
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   features:
     - navigation.instant
     - navigation.tabs
+    - navigation.sections
     - navigation.top
+    - navigation.footer
+    - navigation.path
+    - navigation.tracking
+    - content.code.copy
+    - content.tooltips
     - search.highlight
     - search.suggest
     - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/custom.css
 
 plugins:
   - search
@@ -40,3 +54,10 @@ markdown_extensions:
   - toc:
       permalink: true
   - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - attr_list
+  - md_in_html

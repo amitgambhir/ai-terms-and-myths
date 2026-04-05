@@ -76,10 +76,36 @@ Published as a GitHub Pages site via MkDocs Material. Content files at the repo 
 | Sentences > 30 words | Shorten. Complexity buries practitioners. |
 | Orphaned acronyms | Expand on first use. Expand again in separate sections. |
 
+## Inclusion Criteria
+
+### Glossary terms — add if
+
+- It appears in research papers, ML framework docs, or serious industry discussion
+- A practitioner would encounter it and need its exact meaning
+- It fills a gap (e.g., if Attention exists but Self-Attention doesn't, add Self-Attention)
+
+### Glossary terms — do not add
+
+- Marketing jargon ("AI-powered" is not a term to define)
+- Standalone acronym expansions (BERT is useful for its architecture, not its expansion)
+- Deprecated techniques unless they explain modern variants (LSTMs explain why transformers are better)
+
+### Myths — add if
+
+- Widely believed by a meaningful segment of practitioners or decision-makers
+- Getting it wrong changes real decisions (model choice, architecture, hiring, scope)
+- The reality is counterintuitive enough to warrant explanation
+
+### Myths — do not add
+
+- Straw men or fringe beliefs no one actually holds
+- Trivial facts dressed up as misconceptions
+- Transient news or market claims — these age poorly
+
 ## Scope
 
-- **Glossary**: 100-150 terms total. Only add terms practitioners actually ask about.
-- **Myths**: 10-15 core myths. Each earns its place through frequency and impact.
+- **Glossary**: 100-150 terms total.
+- **Myths**: 10-15 core myths.
 - **No code examples** in these documents. This is prose reference material.
 
 ## When to Stop
@@ -102,6 +128,8 @@ Do not proceed if:
 
 The site is built with MkDocs Material and auto-deploys on push to `main` via GitHub Actions.
 
+**Theme:** Clean white-header design modeled after Google's adk.dev. White primary in light mode, grey primary in dark mode (header/sidebar blend with background). Custom CSS at `docs/stylesheets/custom.css` provides wider content grid (80%), bold blue sidebar section titles, and dark mode overrides.
+
 **Local development:**
 
 ```bash
@@ -116,13 +144,14 @@ mkdocs serve                    # http://127.0.0.1:8000/
 ## Key Files
 
 | File | Purpose |
-|------|---------|
+| ---- | ------- |
 | `ai-terms-glossary.md` | The glossary |
 | `ai-myths-busted.md` | The myths document |
 | `CONTRIBUTE.md` | Contribution guide with criteria and precision checklist |
 | `.github/copilot-instructions.md` | Detailed workspace instructions (tone, structure, common corrections) |
 | `.github/skills/ai-glossary-and-myths/SKILL.md` | Copilot skill definitions for `/add-glossary-entry` and `/debunk-myth` |
 | `mkdocs.yml` | MkDocs site configuration (nav, theme, plugins) |
+| `docs/stylesheets/custom.css` | Custom CSS — wider grid, blue sidebar titles, dark mode blending |
 | `docs/` | Site source — symlinks to root content files + `index.md` landing page |
 | `requirements.txt` | Pins mkdocs-material version for CI |
 | `.github/workflows/deploy-pages.yml` | GitHub Actions auto-deploy workflow |

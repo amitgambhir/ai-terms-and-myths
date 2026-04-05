@@ -133,7 +133,7 @@ Do not add:
 
 ### GitHub Pages Site
 
-The project is published as a GitHub Pages site using MkDocs Material. The `docs/` folder contains symlinks to the root-level content files — **never edit the symlinks directly**. Always edit the source files at the repo root (`ai-terms-glossary.md`, `ai-myths-busted.md`, `CONTRIBUTE.md`). The site auto-deploys on push to `main`.
+The project is published as a GitHub Pages site using MkDocs Material with a clean white-header theme (modeled after adk.dev). Custom CSS at `docs/stylesheets/custom.css` provides wider content grid, bold blue sidebar section titles, and dark mode blending. The `docs/` folder contains symlinks to the root-level content files — **never edit the symlinks directly**. Always edit the source files at the repo root (`ai-terms-glossary.md`, `ai-myths-busted.md`, `CONTRIBUTE.md`). The site auto-deploys on push to `main`.
 
 ---
 
